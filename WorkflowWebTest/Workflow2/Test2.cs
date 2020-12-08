@@ -3,20 +3,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using WorkflowCore.Interface;
-using WorkflowWebTest.Step;
 
-namespace WorkflowWebTest.Workflow
+namespace WorkflowWebTest.Workflow2
 {
-    public class Test1 : IWorkflow
+    public class Test2 : IWorkflow
     {
-        public string Id => "test1";
+        public string Id => "test2";
 
         public int Version => 1;
 
         public void Build(IWorkflowBuilder<object> builder)
         {
-            builder.StartWith<Step1>()
-                .Then<Step2>();
+            builder.StartWith<Test2Step1>()
+                .Then<Test2Step2>();
         }
     }
 }

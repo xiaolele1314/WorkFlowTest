@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "mIJwLf3N37X5TTrI0S2/yqk6+fzokzT98oF3eppu7B3S42+iOmgM0GS8lZIlA+Bl9aqYMC8CdAhnT/G6m6nV8g==",
+  "dgSpecHash": "x0y6daDfF2Y+VNNq7Gg4b7Zb00Qwm65AEIaojRbcKXVNwShIxfMxvw8IUpf27V4fxzmkAn6Gov9Prx1gPJEiog==",
   "success": true,
   "projectFilePath": "C:\\Users\\zhangle\\source\\repos\\WorkFlowTest\\WorkflowWebTest\\WorkflowWebTest.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\zhangle\\.nuget\\packages\\automapper\\10.0.0\\automapper.10.0.0.nupkg.sha512",
+    "C:\\Users\\zhangle\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.0.1\\automapper.extensions.microsoft.dependencyinjection.8.0.1.nupkg.sha512",
     "C:\\Users\\zhangle\\.nuget\\packages\\concurrenthashset\\1.1.0\\concurrenthashset.1.1.0.nupkg.sha512",
     "C:\\Users\\zhangle\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.0\\microsoft.bcl.asyncinterfaces.1.1.0.nupkg.sha512",
     "C:\\Users\\zhangle\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",
@@ -58,7 +60,7 @@
     "C:\\Users\\zhangle\\.nuget\\packages\\system.linq.queryable\\4.3.0\\system.linq.queryable.4.3.0.nupkg.sha512",
     "C:\\Users\\zhangle\\.nuget\\packages\\system.objectmodel\\4.3.0\\system.objectmodel.4.3.0.nupkg.sha512",
     "C:\\Users\\zhangle\\.nuget\\packages\\system.reflection\\4.3.0\\system.reflection.4.3.0.nupkg.sha512",
-    "C:\\Users\\zhangle\\.nuget\\packages\\system.reflection.emit\\4.3.0\\system.reflection.emit.4.3.0.nupkg.sha512",
+    "C:\\Users\\zhangle\\.nuget\\packages\\system.reflection.emit\\4.7.0\\system.reflection.emit.4.7.0.nupkg.sha512",
     "C:\\Users\\zhangle\\.nuget\\packages\\system.reflection.emit.ilgeneration\\4.3.0\\system.reflection.emit.ilgeneration.4.3.0.nupkg.sha512",
     "C:\\Users\\zhangle\\.nuget\\packages\\system.reflection.emit.lightweight\\4.3.0\\system.reflection.emit.lightweight.4.3.0.nupkg.sha512",
     "C:\\Users\\zhangle\\.nuget\\packages\\system.reflection.extensions\\4.3.0\\system.reflection.extensions.4.3.0.nupkg.sha512",

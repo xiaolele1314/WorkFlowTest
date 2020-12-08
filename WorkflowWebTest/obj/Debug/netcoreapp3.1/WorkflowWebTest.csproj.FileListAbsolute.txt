@@ -35,8 +35,6 @@ C:\Users\zhangle\source\repos\WorkFlowTest\WorkflowWebTest\bin\Debug\netcoreapp3
 C:\Users\zhangle\source\repos\WorkFlowTest\WorkflowWebTest\bin\Debug\netcoreapp3.1\WorkflowCore.Persistence.MySQL.dll
 C:\Users\zhangle\source\repos\WorkFlowTest\WorkflowWebTest\obj\Debug\netcoreapp3.1\WorkflowWebTest.AssemblyInfoInputs.cache
 C:\Users\zhangle\source\repos\WorkFlowTest\WorkflowWebTest\obj\Debug\netcoreapp3.1\WorkflowWebTest.AssemblyInfo.cs
-C:\Users\zhangle\source\repos\WorkFlowTest\WorkflowWebTest\obj\Debug\netcoreapp3.1\WorkflowWebTest.csproj.CoreCompileInputs.cache
-C:\Users\zhangle\source\repos\WorkFlowTest\WorkflowWebTest\obj\Debug\netcoreapp3.1\WorkflowWebTest.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\zhangle\source\repos\WorkFlowTest\WorkflowWebTest\obj\Debug\netcoreapp3.1\WorkflowWebTest.RazorTargetAssemblyInfo.cache
 C:\Users\zhangle\source\repos\WorkFlowTest\WorkflowWebTest\obj\Debug\netcoreapp3.1\WorkflowWebTest.csproj.CopyComplete
 C:\Users\zhangle\source\repos\WorkFlowTest\WorkflowWebTest\obj\Debug\netcoreapp3.1\staticwebassets\WorkflowWebTest.StaticWebAssets.Manifest.cache
@@ -45,3 +43,7 @@ C:\Users\zhangle\source\repos\WorkFlowTest\WorkflowWebTest\obj\Debug\netcoreapp3
 C:\Users\zhangle\source\repos\WorkFlowTest\WorkflowWebTest\obj\Debug\netcoreapp3.1\WorkflowWebTest.pdb
 C:\Users\zhangle\source\repos\WorkFlowTest\WorkflowWebTest\obj\Debug\netcoreapp3.1\WorkflowWebTest.genruntimeconfig.cache
 C:\Users\zhangle\source\repos\WorkFlowTest\WorkflowWebTest\obj\Debug\netcoreapp3.1\WorkflowWebTest.csprojAssemblyReference.cache
+C:\Users\zhangle\source\repos\WorkFlowTest\WorkflowWebTest\bin\Debug\netcoreapp3.1\AutoMapper.dll
+C:\Users\zhangle\source\repos\WorkFlowTest\WorkflowWebTest\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\zhangle\source\repos\WorkFlowTest\WorkflowWebTest\obj\Debug\netcoreapp3.1\WorkflowWebTest.csproj.CoreCompileInputs.cache
+C:\Users\zhangle\source\repos\WorkFlowTest\WorkflowWebTest\obj\Debug\netcoreapp3.1\WorkflowWebTest.MvcApplicationPartsAssemblyInfo.cache

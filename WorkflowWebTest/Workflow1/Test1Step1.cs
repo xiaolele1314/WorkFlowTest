@@ -5,14 +5,14 @@ using System.Threading.Tasks;
 using WorkflowCore.Interface;
 using WorkflowCore.Models;
 
-namespace WorkflowWebTest.Step
+namespace WorkflowWebTest.Workflow1
 {
-    public class Step1 : StepBody
+    public class Test1Step1 : StepBody
     {
         public override ExecutionResult Run(IStepExecutionContext context)
         {
-            context.Workflow.Status = WorkflowStatus.Suspended;
-            Console.WriteLine("step1 start");
+            //context.Workflow.Status = WorkflowStatus.Suspended;
+            Console.WriteLine("Test1Step1 start");
             return ExecutionResult.Next();
         }
     }

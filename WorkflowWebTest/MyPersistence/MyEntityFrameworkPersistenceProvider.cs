@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using WorkflowCore.Persistence.EntityFramework.Interfaces;
+using WorkflowCore.Persistence.EntityFramework.Models;
 using WorkflowCore.Persistence.EntityFramework.Services;
 
 namespace WorkflowWebTest.Test
@@ -52,5 +53,20 @@ namespace WorkflowWebTest.Test
                 return raw;
             }
         }
+
+        public async Task<PersistedExecutionPointer> GetWorkflowStep(string id)
+        {
+            using (var db = ConstructDbContext())
+            {
+                var raw = await db.Set<PersistedExecutionPointer>()
+                    .Where(x => x.Id == id).FirstOrDefaultAsync();
+
+                if (raw == null)
+                    return null;
+
+                return raw;
+            }
+        }
+
     }
 }

@@ -12,6 +12,8 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Pomelo.EntityFrameworkCore.MySql.Storage;
 using WorkflowWebTest.Test;
+using AutoMapper;
+using WorkflowWebTest.MyProfile;
 
 namespace WorkflowWebTest
 {
@@ -27,10 +29,12 @@ namespace WorkflowWebTest
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            
             //services.AddDbContext<TestDbcontext>(opt => opt.UseMySql("server = service.byzan.cxist.com; userid = root; password = Iubang001!; database = Dev.fizz.Ord;",ServerVersion.AutoDetect("server = service.byzan.cxist.com; userid = root; password = Iubang001!; database = Dev.fizz.Ord;")));
             services.AddWorkflow(x => x.UseMySQL("Server=service.byzan.cxist.com;Database=workflow;User=root;Password=Iubang001!;"));
             services.AddControllers();
-            
+            services.AddAutoMapper(typeof(DefinationProfile));
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

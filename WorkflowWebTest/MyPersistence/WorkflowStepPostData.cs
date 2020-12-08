@@ -5,9 +5,8 @@ using System.Threading.Tasks;
 
 namespace WorkflowWebTest.Test
 {
-    public class WorkflowValue
+    public class WorkflowStepPostData
     {
         public string WorkflowId { get; set; }
-        public string WorkflowDefinationId { get; set; }
     }
 }
