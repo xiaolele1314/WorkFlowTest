@@ -337,7 +337,7 @@
           "lib/netcoreapp3.0/MySqlConnector.dll": {}
         }
       },
-      "Newtonsoft.Json/12.0.1": {
+      "Newtonsoft.Json/12.0.3": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
@@ -384,6 +384,18 @@
         },
         "runtime": {
           "lib/netstandard1.0/_._": {}
+        }
+      },
+      "SharpYaml/1.6.5": {
+        "type": "package",
+        "dependencies": {
+          "System.Reflection.TypeExtensions": "4.3.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/SharpYaml.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/SharpYaml.dll": {}
         }
       },
       "System.Collections/4.3.0": {
@@ -996,6 +1008,20 @@
           "lib/netstandard2.0/WorkflowCore.dll": {}
         }
       },
+      "WorkflowCore.DSL/3.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "12.0.3",
+          "SharpYaml": "1.6.5",
+          "WorkflowCore": "3.3.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/WorkflowCore.DSL.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/WorkflowCore.DSL.dll": {}
+        }
+      },
       "WorkflowCore.Persistence.EntityFramework/3.1.0": {
         "type": "package",
         "dependencies": {
@@ -1563,43 +1589,35 @@
         "mysqlconnector.nuspec"
       ]
     },
-    "Newtonsoft.Json/12.0.1": {
-      "sha512": "pBR3wCgYWZGiaZDYP+HHYnalVnPJlpP1q55qvVb+adrDHmFMDc1NAKio61xTwftK3Pw5h7TZJPJEEVMd6ty8rg==",
+    "Newtonsoft.Json/12.0.3": {
+      "sha512": "6mgjfnRB4jKMlzHSl+VD+oUc1IebOZabkbyWj2RiTgWwYPPuaK1H97G1sHqGwPlS5npiF5Q0OrxN1wni2n5QWg==",
       "type": "package",
-      "path": "newtonsoft.json/12.0.1",
+      "path": "newtonsoft.json/12.0.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.md",
         "lib/net20/Newtonsoft.Json.dll",
-        "lib/net20/Newtonsoft.Json.pdb",
         "lib/net20/Newtonsoft.Json.xml",
         "lib/net35/Newtonsoft.Json.dll",
-        "lib/net35/Newtonsoft.Json.pdb",
         "lib/net35/Newtonsoft.Json.xml",
         "lib/net40/Newtonsoft.Json.dll",
-        "lib/net40/Newtonsoft.Json.pdb",
         "lib/net40/Newtonsoft.Json.xml",
         "lib/net45/Newtonsoft.Json.dll",
-        "lib/net45/Newtonsoft.Json.pdb",
         "lib/net45/Newtonsoft.Json.xml",
         "lib/netstandard1.0/Newtonsoft.Json.dll",
-        "lib/netstandard1.0/Newtonsoft.Json.pdb",
         "lib/netstandard1.0/Newtonsoft.Json.xml",
         "lib/netstandard1.3/Newtonsoft.Json.dll",
-        "lib/netstandard1.3/Newtonsoft.Json.pdb",
         "lib/netstandard1.3/Newtonsoft.Json.xml",
         "lib/netstandard2.0/Newtonsoft.Json.dll",
-        "lib/netstandard2.0/Newtonsoft.Json.pdb",
         "lib/netstandard2.0/Newtonsoft.Json.xml",
         "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.dll",
-        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.pdb",
         "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.xml",
         "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.dll",
-        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.pdb",
         "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
-        "newtonsoft.json.12.0.1.nupkg.sha512",
-        "newtonsoft.json.nuspec"
+        "newtonsoft.json.12.0.3.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "packageIcon.png"
       ]
     },
     "Pomelo.EntityFrameworkCore.MySql/3.1.1": {
@@ -1639,6 +1657,35 @@
         "lib/netstandard1.0/_._",
         "runtime.native.system.4.3.0.nupkg.sha512",
         "runtime.native.system.nuspec"
+      ]
+    },
+    "SharpYaml/1.6.5": {
+      "sha512": "z4MKt+NxdGE5BsmNDNkcTylNx6evl9kvia/ER3jfBf+j2mLUUDz8pTbzoQLCTULR02tziDtX1Ij+eQcAey11Gw==",
+      "type": "package",
+      "path": "sharpyaml/1.6.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net35/SharpYaml.dll",
+        "lib/net35/SharpYaml.pdb",
+        "lib/net35/SharpYaml.xml",
+        "lib/net45/SharpYaml.dll",
+        "lib/net45/SharpYaml.pdb",
+        "lib/net45/SharpYaml.xml",
+        "lib/netstandard1.3/SharpYaml.dll",
+        "lib/netstandard1.3/SharpYaml.pdb",
+        "lib/netstandard1.3/SharpYaml.xml",
+        "lib/netstandard1.6/SharpYaml.dll",
+        "lib/netstandard1.6/SharpYaml.pdb",
+        "lib/netstandard1.6/SharpYaml.xml",
+        "lib/netstandard2.0/SharpYaml.dll",
+        "lib/netstandard2.0/SharpYaml.pdb",
+        "lib/netstandard2.0/SharpYaml.xml",
+        "lib/portable40-net40+sl5+win8+wp8+wpa81/SharpYaml.dll",
+        "lib/portable40-net40+sl5+win8+wp8+wpa81/SharpYaml.pdb",
+        "lib/portable40-net40+sl5+win8+wp8+wpa81/SharpYaml.xml",
+        "sharpyaml.1.6.5.nupkg.sha512",
+        "sharpyaml.nuspec"
       ]
     },
     "System.Collections/4.3.0": {
@@ -4086,6 +4133,18 @@
         "workflowcore.nuspec"
       ]
     },
+    "WorkflowCore.DSL/3.3.0": {
+      "sha512": "Hi+3GS+NA65cm4SMUnmk8+vipMB4P9nQ6FlfpR1URO8vT5zeY5zacY+7eF1PUKIOrINtkLREntN2P+3Xs7hPJA==",
+      "type": "package",
+      "path": "workflowcore.dsl/3.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/WorkflowCore.DSL.dll",
+        "workflowcore.dsl.3.3.0.nupkg.sha512",
+        "workflowcore.dsl.nuspec"
+      ]
+    },
     "WorkflowCore.Persistence.EntityFramework/3.1.0": {
       "sha512": "qYl4lwR5I1SJFcX2onP5kTKtesHTbaexMSKeF5GNnAMzXd6bPJ1Lbb2ErpY0/pOcVvQrvQSdbkp5fifsBDuA/w==",
       "type": "package",
@@ -4119,6 +4178,7 @@
       "Microsoft.EntityFrameworkCore.Design >= 3.1.2",
       "Microsoft.EntityFrameworkCore.Tools >= 3.1.2",
       "WorkflowCore >= 3.3.2",
+      "WorkflowCore.DSL >= 3.3.0",
       "WorkflowCore.Persistence.MySQL >= 3.0.1"
     ]
   },
@@ -4195,6 +4255,10 @@
           "WorkflowCore": {
             "target": "Package",
             "version": "[3.3.2, )"
+          },
+          "WorkflowCore.DSL": {
+            "target": "Package",
+            "version": "[3.3.0, )"
           },
           "WorkflowCore.Persistence.MySQL": {
             "target": "Package",

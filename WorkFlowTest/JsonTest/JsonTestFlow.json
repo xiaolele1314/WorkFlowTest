@@ -1,0 +1,37 @@
+{
+  "Id": "json",
+  "Version": 1,
+  "Description": "",
+  "DataType": "WorkFlowTest.SetData, WorkFlowTest",
+  "Steps": [
+    {
+      "Id": "if1",
+      "StepType": "WorkflowCore.Primitives.If, WorkflowCore",
+      "Inputs": { "Condition": "data.Value1 == \"one\"" },
+      "NextStepId": "if2",
+      "Do": [
+        [
+          {
+            "Id": "do1",
+            "StepType": "WorkFlowTest.Custom, WorkFlowTest",
+            "Inputs": { "Message": "\"Hello from 1\"" }
+          }
+        ]
+      ]
+    },
+    {
+      "Id": "if2",
+      "StepType": "WorkflowCore.Primitives.If, WorkflowCore",
+      "Inputs": { "Condition": "data.Value1 == \"two\"" },
+      "Do": [
+        [
+          {
+            "Id": "do2",
+            "StepType": "WorkFlowTest.Custom, WorkFlowTest",
+            "Inputs": { "Message": "\"Hello from 2\"" }
+          }
+        ]
+      ]
+    }
+  ]
+}

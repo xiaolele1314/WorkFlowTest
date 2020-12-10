@@ -14,6 +14,8 @@ using Pomelo.EntityFrameworkCore.MySql.Storage;
 using WorkflowWebTest.Test;
 using AutoMapper;
 using WorkflowWebTest.MyProfile;
+using WorkflowWebTest.Service;
+using WorkflowWebTest.Interface;
 
 namespace WorkflowWebTest
 {
@@ -34,7 +36,8 @@ namespace WorkflowWebTest
             services.AddWorkflow(x => x.UseMySQL("Server=service.byzan.cxist.com;Database=workflow;User=root;Password=Iubang001!;"));
             services.AddControllers();
             services.AddAutoMapper(typeof(DefinationProfile));
-
+            services.AddScoped<IWorkflowWeb, WorkflowWebService>();
+            services.AddWorkflowDSL();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

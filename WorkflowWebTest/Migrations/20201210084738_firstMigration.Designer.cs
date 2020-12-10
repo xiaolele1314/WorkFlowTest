@@ -9,7 +9,7 @@ using WorkflowWebTest.Test;
 namespace WorkflowWebTest.Migrations
 {
     [DbContext(typeof(TestDbcontext))]
-    [Migration("20201208064345_firstMigration")]
+    [Migration("20201210084738_firstMigration")]
     partial class firstMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -293,35 +293,46 @@ namespace WorkflowWebTest.Migrations
                     b.ToTable("Workflow");
                 });
 
+            modelBuilder.Entity("WorkflowWebTest.MyPersistence.MyWorkflowDefinationRelation", b =>
+                {
+                    b.Property<long>("PersistenceId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint");
+
+                    b.Property<string>("Id")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+
+                    b.Property<string>("WorkflowDefinationId")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+
+                    b.Property<string>("WorkflowId")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+
+                    b.HasKey("PersistenceId");
+
+                    b.ToTable("DefinationRelation");
+                });
+
             modelBuilder.Entity("WorkflowWebTest.Test.MyWorkflowDefination", b =>
                 {
                     b.Property<long>("PersistenceId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("bigint");
 
-                    b.Property<string>("DataType")
-                        .HasColumnType("longtext CHARACTER SET utf8mb4");
-
-                    b.Property<int>("DefaultErrorBehavior")
-                        .HasColumnType("int");
-
-                    b.Property<string>("DefaultErrorRetryInterval")
+                    b.Property<string>("Description")
                         .HasColumnType("longtext CHARACTER SET utf8mb4");
 
                     b.Property<string>("Id")
                         .HasColumnType("longtext CHARACTER SET utf8mb4");
 
-                    b.Property<string>("OnPostMiddlewareError")
+                    b.Property<string>("InstanceId")
                         .HasColumnType("longtext CHARACTER SET utf8mb4");
 
-                    b.Property<string>("Steps")
-                        .HasColumnType("longtext CHARACTER SET utf8mb4");
-
-                    b.Property<string>("WorkflowId")
-                        .HasColumnType("longtext CHARACTER SET utf8mb4");
-
-                    b.Property<int?>("WorkflowVersion")
+                    b.Property<int>("Version")
                         .HasColumnType("int");
+
+                    b.Property<string>("WorkflowData")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
 
                     b.HasKey("PersistenceId");
 

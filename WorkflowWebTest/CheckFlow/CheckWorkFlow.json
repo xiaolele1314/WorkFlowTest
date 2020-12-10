@@ -1,0 +1,35 @@
+{
+  "Id": "json",
+  "Version": 1,
+  "Description": "",
+  "DataType": "WorkflowWebTest.CheckFlow.CheckData, WorkflowWebTest",
+  "Steps": [
+    {
+      "Id": "agree",
+      "StepType": "WorkflowCore.Primitives.If, WorkflowCore",
+      "Inputs": { "Condition": "data.IsAgree == true" },
+      "NextStepId": "disagree",
+      "Do": [
+        [
+          {
+            "Id": "do1",
+            "StepType": "WorkflowWebTest.CheckFlow.Agree, WorkflowWebTest"
+          }
+        ]
+      ]
+    },
+    {
+      "Id": "disagree",
+      "StepType": "WorkflowCore.Primitives.If, WorkflowCore",
+      "Inputs": { "Condition": "data.IsAgree == false" },
+      "Do": [
+        [
+          {
+            "Id": "do2",
+            "StepType": "WorkflowWebTest.CheckFlow.Disagree, WorkflowWebTest"
+          }
+        ]
+      ]
+    }
+  ]
+}

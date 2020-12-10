@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 using WorkflowCore.Persistence.EntityFramework.Models;
 using WorkflowCore.Persistence.EntityFramework.Services;
 using WorkflowCore.Persistence.MySQL;
+using WorkflowWebTest.MyPersistence;
 
 namespace WorkflowWebTest.Test
 {
@@ -35,8 +36,10 @@ namespace WorkflowWebTest.Test
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
-            var buider = modelBuilder.Entity<MyWorkflowDefination>();
-            ConfigureDefination(buider);
+            var buider1 = modelBuilder.Entity<MyWorkflowDefination>();
+            var buider2 = modelBuilder.Entity<MyWorkflowDefinationRelation>();
+            ConfigureDefination(buider1);
+            ConfigureDefinationRelation(buider2);
         }
 
         protected override void ConfigureSubscriptionStorage(EntityTypeBuilder<PersistedSubscription> builder)
@@ -78,6 +81,12 @@ namespace WorkflowWebTest.Test
         private void ConfigureDefination(EntityTypeBuilder<MyWorkflowDefination> builder)
         {
             builder.ToTable("Defination");
+            builder.Property(x => x.PersistenceId).ValueGeneratedOnAdd();
+        }
+
+        private void ConfigureDefinationRelation(EntityTypeBuilder<MyWorkflowDefinationRelation> builder)
+        {
+            builder.ToTable("DefinationRelation");
             builder.Property(x => x.PersistenceId).ValueGeneratedOnAdd();
         }
     }

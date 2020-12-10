@@ -45,5 +45,8 @@ C:\Users\zhangle\source\repos\WorkFlowTest\WorkflowWebTest\obj\Debug\netcoreapp3
 C:\Users\zhangle\source\repos\WorkFlowTest\WorkflowWebTest\obj\Debug\netcoreapp3.1\WorkflowWebTest.csprojAssemblyReference.cache
 C:\Users\zhangle\source\repos\WorkFlowTest\WorkflowWebTest\bin\Debug\netcoreapp3.1\AutoMapper.dll
 C:\Users\zhangle\source\repos\WorkFlowTest\WorkflowWebTest\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\zhangle\source\repos\WorkFlowTest\WorkflowWebTest\bin\Debug\netcoreapp3.1\CheckFlow\CheckWorkFlow.json
+C:\Users\zhangle\source\repos\WorkFlowTest\WorkflowWebTest\bin\Debug\netcoreapp3.1\SharpYaml.dll
+C:\Users\zhangle\source\repos\WorkFlowTest\WorkflowWebTest\bin\Debug\netcoreapp3.1\WorkflowCore.DSL.dll
 C:\Users\zhangle\source\repos\WorkFlowTest\WorkflowWebTest\obj\Debug\netcoreapp3.1\WorkflowWebTest.csproj.CoreCompileInputs.cache
 C:\Users\zhangle\source\repos\WorkFlowTest\WorkflowWebTest\obj\Debug\netcoreapp3.1\WorkflowWebTest.MvcApplicationPartsAssemblyInfo.cache

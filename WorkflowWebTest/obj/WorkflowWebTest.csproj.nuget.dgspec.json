@@ -73,6 +73,10 @@
               "target": "Package",
               "version": "[3.3.2, )"
             },
+            "WorkflowCore.DSL": {
+              "target": "Package",
+              "version": "[3.3.0, )"
+            },
             "WorkflowCore.Persistence.MySQL": {
               "target": "Package",
               "version": "[3.0.1, )"

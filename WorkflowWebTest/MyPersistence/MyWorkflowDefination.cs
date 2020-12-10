@@ -12,13 +12,10 @@ namespace WorkflowWebTest.Test
     {
         [Key]
         public long PersistenceId { get; set; }
+        public string InstanceId { get; set; }
         public string Id { get; set; }
-        public string WorkflowId { get; set; }
-        public string DataType { get; set; }
-        public int? WorkflowVersion { get; set; }
-        public string Steps { get; set; }
-        public WorkflowErrorHandling DefaultErrorBehavior { get; set; } = WorkflowErrorHandling.Retry;
-        public string DefaultErrorRetryInterval { get; set; }
-        public string OnPostMiddlewareError { get; set; }
+        public int Version { get; set; }
+        public string Description { get; set; }
+        public string WorkflowData { get; set; }
     }
 }

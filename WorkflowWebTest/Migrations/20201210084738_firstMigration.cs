@@ -14,18 +14,30 @@ namespace WorkflowWebTest.Migrations
                 {
                     PersistenceId = table.Column<long>(nullable: false)
                         .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
+                    InstanceId = table.Column<string>(nullable: true),
                     Id = table.Column<string>(nullable: true),
-                    WorkflowId = table.Column<string>(nullable: true),
-                    DataType = table.Column<string>(nullable: true),
-                    WorkflowVersion = table.Column<int>(nullable: true),
-                    Steps = table.Column<string>(nullable: true),
-                    DefaultErrorBehavior = table.Column<int>(nullable: false),
-                    DefaultErrorRetryInterval = table.Column<string>(nullable: true),
-                    OnPostMiddlewareError = table.Column<string>(nullable: true)
+                    Version = table.Column<int>(nullable: false),
+                    Description = table.Column<string>(nullable: true),
+                    WorkflowData = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Defination", x => x.PersistenceId);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "DefinationRelation",
+                columns: table => new
+                {
+                    PersistenceId = table.Column<long>(nullable: false)
+                        .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
+                    Id = table.Column<string>(nullable: true),
+                    WorkflowId = table.Column<string>(nullable: true),
+                    WorkflowDefinationId = table.Column<string>(nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_DefinationRelation", x => x.PersistenceId);
                 });
 
             migrationBuilder.CreateTable(
@@ -229,6 +241,9 @@ namespace WorkflowWebTest.Migrations
         {
             migrationBuilder.DropTable(
                 name: "Defination");
+
+            migrationBuilder.DropTable(
+                name: "DefinationRelation");
 
             migrationBuilder.DropTable(
                 name: "Event");

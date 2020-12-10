@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using WorkflowCore.Persistence.EntityFramework.Interfaces;
 using WorkflowCore.Persistence.EntityFramework.Models;
 using WorkflowCore.Persistence.EntityFramework.Services;
+using WorkflowWebTest.MyPersistence;
 
 namespace WorkflowWebTest.Test
 {
@@ -33,10 +34,10 @@ namespace WorkflowWebTest.Test
         {
             using(var db = ConstructDbContext())
             {
-                defination.Id = Guid.NewGuid().ToString();
+                defination.InstanceId = Guid.NewGuid().ToString();
                 var result = db.Set<MyWorkflowDefination>().Add(defination);
                 await db.SaveChangesAsync();
-                return defination.Id;
+                return defination.InstanceId;
             }
         }
 
@@ -45,7 +46,20 @@ namespace WorkflowWebTest.Test
             using (var db = ConstructDbContext())
             {
                 var raw = await db.Set<MyWorkflowDefination>()
-                    .Where(x => x.Id == id).FirstOrDefaultAsync();
+                    .Where(x => x.InstanceId == id).FirstOrDefaultAsync();
+
+                if (raw == null)
+                    return null;
+
+                return raw;
+            }
+        }
+        public async Task<MyWorkflowDefination> GetWorkflowDefination(string workflowId,int version)
+        {
+            using (var db = ConstructDbContext())
+            {
+                var raw = await db.Set<MyWorkflowDefination>()
+                    .Where(x => x.Id == workflowId && x.Version == version).FirstOrDefaultAsync();
 
                 if (raw == null)
                     return null;
@@ -68,5 +82,15 @@ namespace WorkflowWebTest.Test
             }
         }
 
+        public async Task<string> CreateWorkflowDefinationRelation(MyWorkflowDefinationRelation relation)
+        {
+            using (var db = ConstructDbContext())
+            {
+                relation.Id = Guid.NewGuid().ToString();
+                var result = db.Set<MyWorkflowDefinationRelation>().Add(relation);
+                await db.SaveChangesAsync();
+                return relation.Id;
+            }
+        }
     }
 }

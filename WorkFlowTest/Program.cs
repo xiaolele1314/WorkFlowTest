@@ -16,7 +16,11 @@ using WorkFlowTest.ParallelTask;
 using WorkFlowTest.PassingData;
 using WorkFlowTest.RoleWorkflow;
 using WorkFlowTest.WhileLoop;
+using WorkflowCore.Interface;
 using DoSomething = WorkFlowTest.ParallelForeach.DoSomething;
+using WorkflowCore.Services.DefinitionStorage;
+using System.IO;
+using System.Text;
 
 namespace WorkFlowTest
 {
@@ -26,9 +30,15 @@ namespace WorkFlowTest
         {
             var serviceProvider = ConfigureServices();
             var host = serviceProvider.GetService<IWorkflowHost>();
+            var loader = serviceProvider.GetService<IDefinitionLoader>();
 
+            var str = Directory.GetCurrentDirectory();
+            string jsonString = File.ReadAllText("C:\\Users\\zhangle\\source\\repos\\WorkFlowTest\\WorkFlowTest\\JsonTest\\JsonTestFlow.json", Encoding.Default);
+            var def = loader.LoadDefinition(jsonString, Deserializers.Json);
 
-            HelloWorld(host,serviceProvider);
+            host.Start();
+            host.StartWorkflow("json", 1, new SetData { Value1 = "one" });
+            //HelloWorld(host,serviceProvider);
             //MutipleOutcome(host);
             //PassingData(host);
             //ParallelFoeEach(host);
@@ -52,7 +62,8 @@ namespace WorkFlowTest
         {
             IServiceCollection services = new ServiceCollection();
             services.AddLogging(); // WorkflowCore需要用到logging service
-            services.AddWorkflow(x => x.UseMySQL(@"Server=service.byzan.cxist.com;Database=workflow;User=root;Password=Iubang001!;", true, true));
+            services.AddWorkflow();
+            services.AddWorkflowDSL();
             //services.AddWorkflow();
 
             //services.AddTransient<DoSomething>();

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using WorkflowWebTest.CheckFlow;
 
 namespace WorkflowWebTest.Test
 {
@@ -10,6 +11,6 @@ namespace WorkflowWebTest.Test
         public string WorkflowId { get; set; }
         public int? Version { get; set; }
         public string Reference { get; set; }
-        public object Data { get; set; }
+        public CheckData Data { get; set; }
     }
 }

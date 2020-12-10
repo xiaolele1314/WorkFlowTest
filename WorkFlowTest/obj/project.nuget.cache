@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "4YcfxW1MNHfA70k82N6V5ElwZTGoeFhJ+RD4NHAOcWwvr3BfeTj/fUsXAyjyDTKhEinQfkdycugDeXXNwriR2Q==",
+  "dgSpecHash": "twi4PP+ypyX8g1747clRHdxfYDAuGnkzUnKzIhR750g2F0Y+UvC9jZ2rA/pcWYvBz4vJ5VTUwV830szFx5yk/A==",
   "success": true,
   "projectFilePath": "C:\\Users\\zhangle\\source\\repos\\WorkFlowTest\\WorkFlowTest\\WorkFlowTest.csproj",
   "expectedPackageFiles": [
@@ -35,10 +35,11 @@
     "C:\\Users\\zhangle\\.nuget\\packages\\microsoft.netcore.platforms\\2.1.2\\microsoft.netcore.platforms.2.1.2.nupkg.sha512",
     "C:\\Users\\zhangle\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\zhangle\\.nuget\\packages\\mysqlconnector\\0.61.0\\mysqlconnector.0.61.0.nupkg.sha512",
-    "C:\\Users\\zhangle\\.nuget\\packages\\newtonsoft.json\\12.0.1\\newtonsoft.json.12.0.1.nupkg.sha512",
+    "C:\\Users\\zhangle\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
     "C:\\Users\\zhangle\\.nuget\\packages\\pomelo.entityframeworkcore.mysql\\3.1.1\\pomelo.entityframeworkcore.mysql.3.1.1.nupkg.sha512",
     "C:\\Users\\zhangle\\.nuget\\packages\\pomelo.jsonobject\\2.2.1\\pomelo.jsonobject.2.2.1.nupkg.sha512",
     "C:\\Users\\zhangle\\.nuget\\packages\\runtime.native.system\\4.3.0\\runtime.native.system.4.3.0.nupkg.sha512",
+    "C:\\Users\\zhangle\\.nuget\\packages\\sharpyaml\\1.6.5\\sharpyaml.1.6.5.nupkg.sha512",
     "C:\\Users\\zhangle\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",
     "C:\\Users\\zhangle\\.nuget\\packages\\system.collections.concurrent\\4.3.0\\system.collections.concurrent.4.3.0.nupkg.sha512",
     "C:\\Users\\zhangle\\.nuget\\packages\\system.collections.immutable\\1.7.0\\system.collections.immutable.1.7.0.nupkg.sha512",
@@ -86,6 +87,7 @@
     "C:\\Users\\zhangle\\.nuget\\packages\\system.threading.thread\\4.3.0\\system.threading.thread.4.3.0.nupkg.sha512",
     "C:\\Users\\zhangle\\.nuget\\packages\\system.threading.threadpool\\4.3.0\\system.threading.threadpool.4.3.0.nupkg.sha512",
     "C:\\Users\\zhangle\\.nuget\\packages\\workflowcore\\3.3.2\\workflowcore.3.3.2.nupkg.sha512",
+    "C:\\Users\\zhangle\\.nuget\\packages\\workflowcore.dsl\\3.3.0\\workflowcore.dsl.3.3.0.nupkg.sha512",
     "C:\\Users\\zhangle\\.nuget\\packages\\workflowcore.persistence.entityframework\\3.1.0\\workflowcore.persistence.entityframework.3.1.0.nupkg.sha512",
     "C:\\Users\\zhangle\\.nuget\\packages\\workflowcore.persistence.mysql\\3.0.1\\workflowcore.persistence.mysql.3.0.1.nupkg.sha512"
   ],
