@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.30309.148
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkFlowTest", "WorkFlowTest\WorkFlowTest.csproj", "{AE182B33-0C5F-4F98-9397-34EE1292FC26}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkflowWebTest", "WorkflowWebTest\WorkflowWebTest.csproj", "{546A9C6E-071B-42D4-BC22-24C910AE34C9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkflowWebTest", "WorkflowWebTest\WorkflowWebTest.csproj", "{546A9C6E-071B-42D4-BC22-24C910AE34C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElsaFlowTest", "ElsaFlowTest\ElsaFlowTest.csproj", "{C3648F78-79ED-4933-AA35-6E16F8B7983F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{546A9C6E-071B-42D4-BC22-24C910AE34C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{546A9C6E-071B-42D4-BC22-24C910AE34C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{546A9C6E-071B-42D4-BC22-24C910AE34C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3648F78-79ED-4933-AA35-6E16F8B7983F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3648F78-79ED-4933-AA35-6E16F8B7983F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3648F78-79ED-4933-AA35-6E16F8B7983F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3648F78-79ED-4933-AA35-6E16F8B7983F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -16,7 +16,6 @@ using WorkFlowTest.ParallelTask;
 using WorkFlowTest.PassingData;
 using WorkFlowTest.RoleWorkflow;
 using WorkFlowTest.WhileLoop;
-using WorkflowCore.Interface;
 using DoSomething = WorkFlowTest.ParallelForeach.DoSomething;
 using WorkflowCore.Services.DefinitionStorage;
 using System.IO;
@@ -193,7 +192,7 @@ namespace WorkFlowTest
             var initialData = new EventFlowData();
             var workflowId = host.StartWorkflow("EventSampleWorkflow", 1, initialData).Result;
 
-            var id = "EventSampleWorkflow";
+            //var id = "EventSampleWorkflow";
          
             //var workflow = workflowController.SuspendWorkflow(workflowId).Result;
             Console.WriteLine("Enter value to publish");
